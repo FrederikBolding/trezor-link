@@ -19,7 +19,7 @@ try {
 
 if (typeof window === `undefined`) {
   // eslint-disable-next-line quotes
-  const fetch = require('node-fetch');
+  const fetch = require('node-fetch').default;
   BridgeTransportV2.setFetch(fetch, true);
 } else {
   BridgeTransportV2.setFetch(fetch, false);
